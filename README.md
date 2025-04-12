@@ -27,7 +27,7 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [X] Multiple filters can be applied simultaneously
+- [ ] Multiple filters can be applied simultaneously
 - [X] Filters use different input types
   - e.g., as a text input, a dropdown or radio selection, and/or a slider
 - [X] The user can enter specific bounds for filter values
@@ -40,10 +40,10 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./public/data-dash.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with ...  Kap
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -51,7 +51,7 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+At one point I had trouble with my api querying too often and it made me run out of my daily queries after only a few calls, so I had to go in and make sure it was as efficient as possible.
 
 ## License
 

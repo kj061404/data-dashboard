@@ -18,15 +18,16 @@ function App() {
       try {
         const apiKey = import.meta.env.VITE_SPOONACULAR_API_KEY;
         const response = await fetch(
-          `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&number=20&addNutrition=true`
+          `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&number=20&addRecipeNutrition=true`
         );
         
         if (!response.ok) {
           throw new Error('Failed to fetch recipes');
         }
+      const data = await response.json();
+      console.log(data);
 
-        const data = await response.json();
-        setRecipes(data.results);
+      setRecipes(data.results);
         
         // Calculate statistics
         const totalRecipes = data.results.length;
@@ -49,6 +50,8 @@ function App() {
     };
 
     fetchRecipes();
+
+
   }, []);
 
   const filteredRecipes = recipes.filter(recipe => {
